@@ -1,5 +1,5 @@
 const serverless = require('serverless-http')
-
+require('ejs')
 require("dotenv").config();
 const express = require("express");
 const methodOverride = require("method-override");
