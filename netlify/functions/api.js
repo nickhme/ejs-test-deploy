@@ -7,8 +7,8 @@ const path = require("path");
 const session = require("express-session");
 
 const mongoose = require("mongoose");
-const Movies = require("./models/movies");
-const authRouter = require("./controllers/authController");
+const Movies = require("../../models/movies");
+const authRouter = require("../../controllers/authController");
 
 const app = express();
 app.use(express.json());
