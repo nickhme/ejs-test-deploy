@@ -1,4 +1,4 @@
-const serverless = require('serverless')
+const serverless = require('serverless-http')
 
 require("dotenv").config();
 const express = require("express");
