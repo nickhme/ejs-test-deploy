@@ -11,6 +11,10 @@ const Movies = require("../../models/movies");
 const authRouter = require("../../controllers/authController");
 
 const app = express();
+
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+
 app.use(express.json());
 mongoose.connect(process.env.MONGODB_URI);
 app.use(methodOverride("_method"));
