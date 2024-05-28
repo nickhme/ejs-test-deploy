@@ -8,7 +8,7 @@
     "method-override": "^3.0.0",
     "mongoose": "^8.3.4",
     "nodemon": "^3.1.0",
-    "serverless": "^4.0.24"
+    "serverless-http": "^3.2.0"
   },
   "scripts": {
     "start": "node server.js"
