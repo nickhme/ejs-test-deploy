@@ -12,7 +12,7 @@ const authRouter = require("../../controllers/authController");
 
 const app = express();
 
-app.set('views', path.join(__dirname, 'views'));
+// app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.json());
 mongoose.connect(process.env.MONGODB_URI);
