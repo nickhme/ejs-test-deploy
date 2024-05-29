@@ -12,6 +12,8 @@ const authRouter = require("../../controllers/authController");
 
 const app = express();
 
+app.set('views', path.join(__dirname, 'views'));
+
 app.use(express.json());
 mongoose.connect(process.env.MONGODB_URI);
 app.use(methodOverride("_method"));
@@ -46,7 +48,7 @@ app.use((req, res, next) => {
 app.use("/auth", authRouter);
 
 app.get("/", (req, res) => {
-  res.render('home.ejs');
+  res.render("home.ejs");
 });
 
 // ! Added this route.
