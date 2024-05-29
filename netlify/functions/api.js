@@ -19,7 +19,7 @@ app.use(methodOverride("_method"));
 // ! I need to tell express to expect data from our form
 app.use(express.urlencoded({ extended: false }));
 // ! adding css
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static("public"));
 
 app.use(
   session({
