@@ -1,7 +1,6 @@
 [functions]
   external_node_modules = ["express", "ejs"]
   node_bundler = "esbuild"
-  directory = "functions"
   included_files = ["views/**"]
 
 [[redirects]]
