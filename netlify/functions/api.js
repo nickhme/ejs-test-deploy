@@ -46,7 +46,7 @@ app.use((req, res, next) => {
 app.use("/auth", authRouter);
 
 app.get("/", (req, res) => {
-  res.render(require.resolve('../../views/home.ejs'));
+  res.render('home.ejs');
 });
 
 // ! Added this route.
